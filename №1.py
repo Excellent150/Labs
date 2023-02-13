@@ -11,7 +11,7 @@ for c in f:
         if "marks" in c:
             marks.append(c[10:-1:3])
 
-s = int(input())
+s = float(input())
 for i in range(len(name)):
     if (int(marks[i][0]) + int(marks[i][1]) + int(marks[i][2])) / 3 >= s:
         print(name[i], surname[i], '\n',(int(marks[i][0]) + int(marks[i][1]) + int(marks[i][2]))/3)
